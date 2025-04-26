@@ -1,0 +1,307 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1A1A1A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #bbb !important;
+    padding: 10px 15px;
+}
+
+.nav-link:hover {
+    color: #00bcd4 !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(0, 151, 180, 0.8), rgba(50, 60, 100, 0.8)), url('images/your-photo.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 6px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section .btn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #0288d1;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-top: -80px;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+#about img:hover {
+    border-color: #00bcd4;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 100px 0;
+    background-color: #f0f4f8;
+}
+
+#portfolio .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Services Section */
+#services {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#services .service-box {
+    background-color: #1A1A1A;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+#services .service-box:hover {
+    transform: translateY(-10px);
+}
+
+#services .service-box i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 100px 0;
+    background-color: #f0f4f8;
+}
+
+#testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#testimonials footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form .form-control {
+    margin-bottom: 25px;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #0288d1;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
